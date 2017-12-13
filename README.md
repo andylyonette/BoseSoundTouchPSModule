@@ -72,7 +72,6 @@ Eg. `Get-Help New-BoseSoundTouchDeviceZone -Detailed` or `Get-Help Add-BoseSound
      Bose SoundTouch 10
      Bose SoundTouch Wireless Link
 * Tested on firmware 17.0.8.39958.2553035
-* Cmdlets exist only for known vehicle commands, however `Invoke-TeslaVehicleCommand` can be used to execute additional API commands as they are discovered
 
 
 
@@ -83,7 +82,7 @@ Eg. `Get-Help New-BoseSoundTouchDeviceZone -Detailed` or `Get-Help Add-BoseSound
 
 
 ## Notes
-Inspiration drawn from:
+API refererence from:
 * https://developer.bose.com/
 
 **Suggestions, improvements and fixes are all welcome!**
