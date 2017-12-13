@@ -17,19 +17,31 @@ PowerShell 3.0
 
 
 ## Usage
-### Connecting to Tesla
-In order to retrieve data and send commands to a Tesla vehicle each time you open a new PowerShell session you first need to get a token from the Tesla customer API OATH service and get the ID used by the API to identify the vehicle you wish to affect.  This can be achieved with the following commands:
+### Finding your Bose SoundTouch Devices
+In order to send commands to a Bose SoundTouch device each time you open a new PowerShell session you first need to get a token from the Bose SoundTouch API OATH service and get the a list of Bose SoundTouch devices associated with your account.  This can be achieved with the following commands:
 
 `$token = Get-BoseSoundTouchAccountToken -Credential (Get-Credential)`
 
-`$device = Get-BoseSoundTouchAccountDevice -Token $token | Where-Object {$_.name -like "Bose SoundTouch 10 - Bathroom"}`
+`$devices = Get-BoseSoundTouchAccountDevice -Token $token`
 
+You can see all the devices by typing `$devices` and select an individual device by piping th `Where-Object`:
+
+`$device = $devices | Where-Object {$_.name -like "Bose SoundTouch 10 - Bathroom"}`
 
 If you only have one Bose SoundTouch device in your SoundTouch account you just can use:
 
 `$token = Get-BoseSoundTouchAccountToken -Credential (Get-Credential)`
 
 `$device = Get-BoseSoundTouchAccountDevice -Token $token`
+
+
+This `$device` variable can now be used with each of the Cmdlets.  For example:
+
+`Select-SoundTouchDevicePreset -Preset 4 -Device $device`
+
+`Set-SoundTouhcDeviceVolume -50 -Device $device`
+
+
 
 
 ### Cmdlet Reference
