@@ -18,7 +18,7 @@ PowerShell 3.0
 
 ## Usage
 ### Finding your Bose SoundTouch Devices
-In order to send commands to a Bose SoundTouch device each time you open a new PowerShell session you first need to get a token from the Bose SoundTouch API OATH service and get the a list of Bose SoundTouch devices associated with your account.  This can be achieved with the following commands:
+In order to send commands to a Bose SoundTouch device each time you open a new PowerShell session you first need to get a token from the Bose SoundTouch API nd get the a list of Bose SoundTouch devices associated with your account.  This can be achieved with the following commands:
 
 `$token = Get-BoseSoundTouchAccountToken -Credential (Get-Credential)`
 
