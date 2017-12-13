@@ -44,6 +44,7 @@ Eg. `Get-Help New-BoseSoundTouchDeviceZone -Detailed` or `Get-Help Add-BoseSound
 * Get-SoundTouchAccountPreset
 
 #### Bose SoundTouch Device cmdlets
+* Add-SoundTouchDeviceZoneSlave
 * Get-SoundTouchDevice
 * Get-SoundTouchDeviceBass
 * Get-SoundTouchDeviceBassCapabilities
