@@ -39,7 +39,7 @@ This `$device` variable can now be used with each of the Cmdlets.  For example:
 
 `Select-SoundTouchDevicePreset -Preset 4 -Device $device`
 
-`Set-SoundTouhcDeviceVolume -50 -Device $device`
+`Set-SoundTouhcDeviceVolume -Volume 50 -Device $device`
 
 
 
